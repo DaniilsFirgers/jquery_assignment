@@ -28,6 +28,20 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 20px;
+  flex-direction: column;
+}
+.dice-throw {
+  display: flex;
+  flex-direction: row;
+}
+
+#dice-message {
+  font-size: x-large;
+  color: gold;
+}
+
+#clear-local-storage {
+  display: none;
 }
 
 #roll-button {
