@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("#roll-button").click(function () {
     // get local storage
-
+    $("#clear-local-storage").hide();
     let sixCount = localStorage.getItem("six");
 
     var diceResult = Math.floor(Math.random() * 6) + 1; // generate random number between 1 and 6
@@ -20,5 +20,11 @@ $(document).ready(function () {
     } else {
       $("#dice-message").text("");
     }
+  });
+  $(".disconfirm-clear").click(function () {
+    $("#clear-local-storage").hide();
+  });
+  $(".confirm-clear").click(function () {
+    localStorage.removeItem("six");
   });
 });
