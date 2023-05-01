@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: lightblue;
+  background-color: rgba(54, 168, 134, 0.699);
 }
 
 .header {
@@ -28,7 +28,6 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 20px;
-  background-color: lightblue;
 }
 
 #roll-button {
