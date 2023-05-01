@@ -21,10 +21,21 @@ $(document).ready(function () {
       $("#dice-message").text("");
     }
   });
+
   $(".disconfirm-clear").click(function () {
     $("#clear-local-storage").hide();
   });
   $(".confirm-clear").click(function () {
     localStorage.removeItem("six");
   });
+
+  // style section
+  let backgroundColors = ["red", "green", "blue", "yellow", "orange"];
+  let i = 0;
+
+  let intervalId = setInterval(function () {
+    console.log(backgroundColors[i]);
+    $(".style-section").css("background-color", backgroundColors[i]);
+    i = (i + 1) % backgroundColors.length;
+  }, 1000);
 });
