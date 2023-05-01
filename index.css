@@ -1,0 +1,49 @@
+body {
+  margin: 0px;
+  background-color: lightblue;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgreen;
+  align-items: center;
+  color: grey;
+}
+
+.student-number {
+  font-size: medium;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.header-name {
+  font-size: x-large;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.dice-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: lightblue;
+}
+
+#roll-button {
+  background: darkolivegreen;
+  width: 120px;
+  height: 36px;
+  font-weight: 600;
+  color: white;
+  border-radius: 5px;
+  border-color: none;
+  margin-right: 15px;
+}
+
+#roll-result {
+  font-size: 36px;
+  text-align: center;
+  color: white;
+}
