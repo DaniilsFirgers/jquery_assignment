@@ -30,7 +30,7 @@ $(document).ready(function () {
   });
 
   // style section
-  let backgroundColors = ["red", "green", "blue", "yellow", "orange"];
+  let backgroundColors = ["green", "red", "yellow", "orange"];
   let i = 0;
 
   let intervalId = setInterval(function () {
@@ -38,4 +38,25 @@ $(document).ready(function () {
     $(".style-section").css("background-color", backgroundColors[i]);
     i = (i + 1) % backgroundColors.length;
   }, 1000);
+  $("#get-todo").click(function () {
+    const randomTodo = Math.floor(Math.random() * 100) + 1;
+    $.ajax({
+      url: `https://jsonplaceholder.typicode.com/todos/${randomTodo}`,
+      method: "GET",
+      dataType: "json",
+      success: function (response) {
+        // Do something with the response data
+        console.log(response.completed);
+        $(".user-id").text(`User ID: ${response.userId}`);
+        $(".title").text(`Title: ${response.title}`);
+        $(".completed").text(
+          `Completed: ${JSON.stringify(response.completed)}`
+        );
+      },
+      error: function (xhr, status, error) {
+        // Handle the error
+        console.log("Error:", error);
+      },
+    });
+  });
 });
