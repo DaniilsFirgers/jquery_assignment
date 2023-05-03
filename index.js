@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  $(function () {
+    $("#accordion").accordion();
+  });
+
   $("#roll-button").click(function () {
     // get local storage
     $("#clear-local-storage").hide();

@@ -96,3 +96,19 @@ body {
   padding-top: 20px;
   background: purple;
 }
+
+#accordion {
+  background-color: coral;
+}
+
+.accordion-header {
+  font-size: 30px;
+  text-align: center;
+}
+
+.accordion-section {
+  border: 3px;
+  border-style: solid;
+  border-color: brown;
+  cursor: pointer;
+}
