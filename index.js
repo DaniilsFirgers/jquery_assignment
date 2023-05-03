@@ -46,7 +46,7 @@ $(document).ready(function () {
       dataType: "json",
       success: function (response) {
         // Do something with the response data
-        console.log(response.completed);
+
         $(".user-id").text(`User ID: ${response.userId}`);
         $(".title").text(`Title: ${response.title}`);
         $(".completed").text(
