@@ -3,6 +3,9 @@ $(document).ready(function () {
     $("#accordion").accordion();
   });
 
+  $("#about-page").click();
+  $("#home-page").click();
+
   $("#roll-button").click(function () {
     // get local storage
     $("#clear-local-storage").hide();

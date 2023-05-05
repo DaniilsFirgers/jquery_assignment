@@ -11,6 +11,11 @@ body {
   color: grey;
 }
 
+.first-two-sections-holder {
+  display: flex;
+  flex-direction: row;
+}
+
 .student-number {
   font-size: medium;
   font-weight: 500;
@@ -23,6 +28,27 @@ body {
   font-weight: 600;
 }
 
+.header-tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: grey;
+  background-color: rgb(99, 231, 99);
+  padding: 3px;
+  border: 1px;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: rgb(48, 228, 48);
+}
+
 .dice-section {
   display: flex;
   align-items: center;
@@ -30,6 +56,7 @@ body {
   padding-top: 20px;
   flex-direction: column;
   padding-bottom: 20px;
+  width: 50%;
 }
 .dice-throw {
   display: flex;
@@ -38,7 +65,6 @@ body {
 .dice-header {
   font-size: 20px;
 }
-
 #dice-message {
   font-size: x-large;
   color: gold;
@@ -81,24 +107,32 @@ body {
 }
 
 #get-todo {
-  background: grey;
+  background: rgb(86, 214, 86);
   border-radius: 5px;
   color: white;
   margin-top: 10px;
+  font-size: larger;
+  cursor: pointer;
+}
+.get-response {
+  padding-left: 20px;
 }
 
 .todo-header {
   font-size: 20px;
+  color: white;
   text-align: center;
 }
 
 .style-section {
   padding-top: 20px;
   background: purple;
+  opacity: 0.5;
+  width: 50%;
 }
 
 #accordion {
-  background-color: coral;
+  background-color: rgb(47, 146, 47);
 }
 
 .accordion-header {
@@ -109,6 +143,8 @@ body {
 .accordion-section {
   border: 3px;
   border-style: solid;
-  border-color: brown;
+  color: white;
+  border-color: rgb(140, 192, 18);
   cursor: pointer;
+  padding: 5px;
 }
