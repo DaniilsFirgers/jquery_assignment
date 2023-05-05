@@ -16,34 +16,39 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header-name">JQuery assignment</h1>
+      <div class="header-tabs">
+        <h1 class="header-name">JQuery assignment</h1>
+        <a id="about-page" class="nav-link" href="about.html">About Page</a>
+        <a id="home-page" class="nav-link" href="home.html">Home Page</a>
+      </div>
       <h2 class="student-number">Student number: <b>df18001</b></h2>
     </header>
-    <div class="dice-section">
-      <h1 class="dice-header">Dice section</h1>
-      <div class="dice-throw">
-        <button id="roll-button">Roll the dice</button>
-        <div id="roll-result">Result</div>
+    <div class="first-two-sections-holder">
+      <div class="dice-section">
+        <h1 class="dice-header">Dice section</h1>
+        <div class="dice-throw">
+          <button id="roll-button">Roll the dice</button>
+          <div id="roll-result">Result</div>
+        </div>
+        <div id="dice-message"></div>
+        <div id="clear-local-storage">
+          <h1>Do you want to clear the results history?</h1>
+          <div class="clear-actions">
+            <button class="confirm-clear">Yes</button
+            ><button class="disconfirm-clear">No</button>
+          </div>
+        </div>
       </div>
-      <div id="dice-message"></div>
-      <div id="clear-local-storage">
-        <h1>Do you want to clear the results history?</h1>
-        <div class="clear-actions">
-          <button class="confirm-clear">Yes</button
-          ><button class="disconfirm-clear">No</button>
+      <div class="style-section">
+        <h1 class="todo-header">Todo section</h1>
+        <div class="get-response">
+          <button id="get-todo">Get new TODO</button>
+          <h1 class="user-id">User ID:</h1>
+          <h1 class="title">Title:</h1>
+          <h1 class="completed">Completed:</h1>
         </div>
       </div>
     </div>
-    <div class="style-section">
-      <h1 class="todo-header">Todo section</h1>
-      <div class="get-response">
-        <button id="get-todo">Get new TODO</button>
-        <h1 class="user-id">User ID:</h1>
-        <h1 class="title">Title:</h1>
-        <h1 class="completed">Completed:</h1>
-      </div>
-    </div>
-
     <h1 class="accordion-header">Accordion</h1>
     <div id="accordion">
       <h3 class="accordion-section">Section 1</h3>
