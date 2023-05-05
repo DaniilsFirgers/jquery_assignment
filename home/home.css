@@ -1,0 +1,50 @@
+body {
+  margin: 0px;
+  background-color: rgba(54, 168, 134, 0.699);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgreen;
+  align-items: center;
+  color: grey;
+}
+
+.first-two-sections-holder {
+  display: flex;
+  flex-direction: row;
+}
+
+.student-number {
+  font-size: medium;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.header-name {
+  font-size: x-large;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.header-tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: grey;
+  background-color: rgb(99, 231, 99);
+  padding: 3px;
+  border: 1px;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: rgb(48, 228, 48);
+}
