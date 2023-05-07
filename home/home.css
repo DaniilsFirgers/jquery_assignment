@@ -35,6 +35,10 @@ body {
   gap: 10px;
 }
 
+.page-name {
+  text-align: center;
+  color: grey;
+}
 .nav-link {
   text-decoration: none;
   color: grey;
@@ -47,4 +51,23 @@ body {
 .nav-link:hover {
   color: white;
   background-color: rgb(48, 228, 48);
+}
+
+.session-info-holder {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#add-cookie-button {
+  font-size: larger;
+  background-color: yellow;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#delete-cookie-button {
+  font-size: larger;
+  background-color: red;
+  border-radius: 5px;
+  cursor: pointer;
 }

@@ -48,3 +48,19 @@ body {
   color: white;
   background-color: rgb(48, 228, 48);
 }
+
+.page-name {
+  text-align: center;
+  color: grey;
+}
+
+ul {
+  font-size: large;
+  font-weight: 500;
+}
+
+.content-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
