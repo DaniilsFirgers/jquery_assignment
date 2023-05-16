@@ -2,4 +2,4 @@
 
 ---
 
-Assigenment illustrating some of the JQuery functionality.
+Assignment illustrating some of the JQuery functionality.
